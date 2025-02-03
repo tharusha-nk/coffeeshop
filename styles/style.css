@@ -1,0 +1,434 @@
+:root {
+    --primary: #F2EFE7;
+    --secondary: #1f1d1d;
+    --additional: #81562f;
+    --font-primary: 'Satoshi', sans-serif;
+    --font-secondary: 'Cabinet Grotesk', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.tagline {
+    width: 78%;
+    margin-inline: auto;
+    margin-top: 80px;
+    min-height: 600px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px 5px 0 0;
+}
+
+.tagline img {
+    width: 100px;
+    height: 100px;
+}
+
+.tagline h1 {
+    padding: 40px;
+    font-family: var(--font-secondary);
+    font-size: 5rem;
+    text-align: center;
+}
+
+.tagline h1 span {
+    color: var(--additional);
+}
+
+.tagline p {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    padding: 30px;
+    width: 70%;
+    text-align: center;
+}
+
+.tagline button {
+    width: 200px;
+    height: 35px;
+    font-family: var(--font-secondary);
+    margin: 10px;
+    transition: 0.2s ease;
+}
+
+.tagline button.scroll {
+    background-color: var(--additional);
+    border: none;
+    color: var(--primary);
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.tagline button.shop {
+    border: 2px solid var(--additional);
+    color: var(--additional);
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.float-nav {
+    position: fixed;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -95%);
+    width: 250px;
+    height: 40px;
+    background-color: var(--secondary);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1.5px solid var(--primary);
+    z-index: 999;
+}
+
+.float-nav a {
+    font-family: var(--font-primary);
+    color: var(--primary);
+    font-size: .8rem;
+    transition: 0.2s ease;
+
+    &:hover {
+        color: var(--additional);
+    }
+}
+
+.about {
+    margin-top: 30px;
+    width: 90%;
+    background-color: var(--additional);
+    min-height: 500px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about .abt-dec {
+    width: 55%;
+}
+
+.about .abt-dec h1 {
+    font-family: var(--font-secondary);
+    font-size: 3rem;
+    padding: 20px;
+    color: var(--primary);
+}
+
+.about .abt-dec p {
+    font-family: var(--font-primary);
+    font-size: .9rem;
+    padding: 20px;
+    color: var(--primary);
+}
+
+.about img {
+    width: 400px;
+    height: 400px;
+}
+
+.menu {
+    width: 78%;
+    margin-top: -40px;
+    min-height: 600px;
+    background-color: var(--primary);
+    margin-inline: auto;
+}
+
+.menu h1 {
+    font-family: var(--font-secondary);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.menu p {
+    font-family: var(--font-primary);
+    font-size: .9rem;
+    text-align: center;
+    color: var(--additional);
+}
+
+
+.menu #card {
+    width: 350px;
+    height: 450px;
+    margin: 40px;
+    transition: .2s;
+
+    &:hover {
+        transform: translateY(6px)
+    }
+}
+
+.menu .menu-body {
+    margin-top: 80px;
+    margin-inline: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu .menu-body .menu-1 {
+    background-image: url('../images/americano.jpg');
+    background-size: cover;
+}
+
+.menu .menu-body .menu-2 {
+    background-image: url('../images/cappuccino.jpg');
+    background-size: cover;
+}
+
+.menu .menu-body .menu-3 {
+    background-image: url('../images/latte.jpg');
+    background-size: cover;
+}
+
+.menu .menu-body .menu-4 {
+    background-image: url('../images/caramel.jpg');
+    background-size: cover;
+}
+
+.menu .menu-body .menu-5 {
+    background-image: url('../images/cream.jpg');
+    background-size: cover;
+}
+
+.menu .menu-body .menu-6 {
+    background-image: url('../images/pack-1.jpg');
+    background-size: cover;
+}
+
+.menu .menu-body .menu-7 {
+    background-image: url('../images/pack-2.jpg');
+    background-size: cover;
+}
+
+.menu #m-dec {
+    width: 200px;
+    height: 40px;
+    background-color: var(--additional);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid var(--primary);
+}
+
+.menu #m-dec a {
+    font-family: var(--font-secondary);
+    color: var(--primary);
+}
+
+.footer {
+    margin-inline: auto;
+    width: 90%;
+    min-height: 500px;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .ctn-msg {
+    width: 40%;
+}
+
+.footer .ctn-msg p {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    color: var(--primary);
+}
+
+.footer .ctn-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .ctn-form input {
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    padding: 0.5px;
+    font-family: var(--font-primary);
+    border-bottom: 1px solid var(--primary);
+    background-color: var(--secondary);
+    color: var(--primary);
+    outline: none;
+}
+
+.footer .ctn-form textarea {
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    border: none;
+    padding: 0.5px;
+    font-family: var(--font-primary);
+    border-bottom: 1px solid var(--primary);
+    background-color: var(--secondary);
+    color: var(--primary);
+    outline: none;
+}
+
+.footer .ctn-form button {
+    width: 300px;
+    height: 35px;
+    margin: 10px;
+    font-family: var(--font-secondary);
+    background-color: var(--additional);
+    color: var(--primary);
+    border: none;
+    transition: 0.2s ease;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.map {
+    width: 90%;
+    margin-inline: auto;
+    min-height: 500px;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.map h1 {
+    font-family: var(--font-secondary);
+    font-size: 2.9rem;
+    text-align: center;
+    padding: 20px;
+    color: var(--secondary);
+}
+
+@media screen and (max-width: 768px) {
+    .tagline {
+        margin-top: 50px;
+        width: 90%;
+        overflow: hidden;
+    }
+    .tagline h1 {
+        padding: 10px;
+        font-size: 2.6rem;
+    }
+    .tagline p {
+        width: 90%;
+        font-size: .8rem;
+    }
+
+    .tagline button {
+        width: 130px;
+        height: 30px;
+        font-size: .8rem;
+    }
+
+    .float-nav {
+        overflow: hidden;
+        width: 180px;
+    }
+    .float-nav a {
+        font-size: .7rem;
+    }
+    .about {
+        width: 90%;
+        flex-direction: column;
+    }
+    .about .abt-dec{
+        width: 90%;
+    }
+
+    .about .abt-dec h1 {
+        font-size: 2.3rem;
+    }
+
+    .about .abt-dec p {
+        font-size: .8rem;
+    }
+
+    .about img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .menu {
+        margin-top: 0;
+        width: 90%;
+    }
+
+    .menu h1 {
+        font-size: 2.3rem;
+    }
+
+    .menu #m-dec {
+        width: 130px;
+    }
+
+    .menu #m-dec a {
+        font-size: .8rem;
+    }
+
+    .menu #card {
+        width: 300px;
+        height: 400px;
+    }
+    .cursor {
+        display: none;
+    }
+    .cursor2 {
+        display: none;
+    }
+    .footer {
+        width: 90%;
+        flex-direction: column;
+    }
+    .footer .ctn-msg {
+        width: 80%;
+        padding: 30px;
+    }
+    .footer .ctn-msg p {
+        font-size: .8rem;
+    }
+    .footer .ctn-form input {
+        width: 280px;
+        height: 25px;
+    }
+    .footer .ctn-form textarea {
+        width: 280px;
+        height: 80px;
+    }
+    .footer .ctn-form button {
+        width: 280px;
+        height: 30px;
+        font-size: .8rem;
+    }
+    .map {
+        width: 90%;
+        margin-top: 0;
+    }
+    .map h1 {
+        font-size: 2.3rem;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@500&f[]=cabinet-grotesk@800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/shop.css">
+    <title>Espresso Lane</title>
+</head>
+
+<body>
+    <div class="float-nav">
+        <a href="../index.html">Home</a>
+        <a href="../index.html">Contact us</a>
+    </div>
+
+    <section id="shop">
+        <div class="menu">
+            <h1 class="head-menu">Our Products</h1>
+            <p>Discover our range of coffee products</p>
+            <div class="menu-body">
+                <div class="menu-1" id="card">
+                    <div class="m1-dec" id="m-dec">
+                        <img src="../images/americano.jpg" alt="Espresso">
+                        <h2>Americano</h2>
+                        <p>Price: $3.00</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="#">Shop now</a>
+                        <button class="add-to-cart" data-product="Americano" data-price="3.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-2" id="card">
+                    <div class="m2-dec" id="m-dec">
+                        <img src="../images/latte.jpg" alt="Latte">
+                        <h2>Latte</h2>
+                        <p>Price: $4.00</p>
+                        <p>Rating: ★★★★★</p>
+                        <a href="#">Shop now</a>
+                        <button class="add-to-cart" data-product="Latte" data-price="4.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-3" id="card">
+                    <div class="m3-dec" id="m-dec">
+                        <img src="../images/cappuccino.jpg" alt="Cappuccino">
+                        <h2>Cappuccino</h2>
+                        <p>Price: $4.50</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="#">Shop now</a>
+                        <button class="add-to-cart" data-product="Cappuccino" data-price="4.50">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-4" id="card">
+                    <div class="m4-dec" id="m-dec">
+                        <img src="../images/cream.jpg" alt="cream">
+                        <h2>Cream coffee</h2>
+                        <p>Price: $3.50</p>
+                        <p>Rating: ★★★☆☆</p>
+                        <a href="#">Shop now</a>
+                        <button class="add-to-cart" data-product="Cream coffee" data-price="3.50">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-5" id="card">
+                    <div class="m5-dec" id="m-dec">
+                        <img src="../images/caramel.jpg" alt="caramel">
+                        <h2>Caramel coffee</h2>
+                        <p>Price: $5.00</p>
+                        <p>Rating: ★★★★★</p>
+                        <a href="#">Shop now</a>
+                        <button class="add-to-cart" data-product="Caramel coffee" data-price="5.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-6" id="card">
+                    <div class="m6-dec" id="m-dec">
+                        <img src="../images/pack-1.jpg" alt="pack">
+                        <h2>Special pack -1</h2>
+                        <p>Price: $4.75</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="#">Shop now</a>
+                        <button class="add-to-cart" data-product="Special pack -1" data-price="4.75">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-7" id="card">
+                    <div class="m7-dec" id="m-dec">
+                        <img src="../images/pack-2.jpg" alt="pack">
+                        <h2>Special pack -2</h2>
+                        <p>Price: $4.25</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="#">Shop now</a>
+                        <button class="add-to-cart" data-product="Special pack -2" data-price="4.25">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+    </aside>
+
+    <script src="../js/shop.js"></script>
+</body>
+
+</html>
